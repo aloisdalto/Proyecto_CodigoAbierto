@@ -154,6 +154,128 @@
     font-weight: bold;
 }
 
+/*FORMACIONES*/
+/*Desarrollo WEB*/
+.container-dw{
+    display: flex;
+    gap: 150px;
+    background-color: var(--color-3);
+    padding: 4rem 10rem 0 0;
+}
+
+.texto-dw, .img-dw{
+    z-index: 2; 
+}
+
+.titulo-dw{
+    font-family: var(--font-orbitron);
+    color: var(--color-2);
+    font-size: 4vw;
+    line-height: 60px;
+    margin-bottom: 20px;
+}
+
+.descp-dw{
+    font-family: var(--font-jetbrains);
+    color: var(--color-4);
+    font-size: 1.5vw;
+    margin-bottom: 70px;
+}
+
+.elemento-dw{
+    position: absolute;
+    left: 0; 
+    margin-top: 304px;
+    display: none;
+    z-index: 1; 
+}
+
+.elemento-dw img{
+    width: 250px;
+    height: auto;
+}
+
+
+/*CIBERSEGURIDAD*/
+.container-cs{
+    display: flex;
+    gap: 60px;
+    background-color: var(--color-1);
+    padding: 4rem 10rem 4rem 5rem;
+}
+
+.texto-cs, .img-cs{
+    z-index: 2; 
+}
+
+.titulo-cs{
+    font-family: var(--font-orbitron);
+    color: var(--color-2);
+    font-size: 4vw;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.descp-cs{
+    font-family: var(--font-jetbrains);
+    color: var(--color-4);
+    font-size: 1.5vw;
+    margin-bottom: 155px;
+}
+
+.elemento-cs{
+    position: absolute;
+    right: 0; 
+    margin-top: 280px;
+    display: none;
+    z-index: 1; 
+}
+
+.elemento-cs img{
+    width: 70px;
+    height: auto;
+}
+
+/*Lenguajes de Programacion*/
+.container-lp{
+    display: flex;
+    gap: 150px;
+    background-color: var(--color-3);
+    padding: 4rem 10rem 4rem 0;
+}
+
+.texto-lp, .img-lp{
+    z-index: 2; 
+}
+
+.titulo-lp{
+    font-family: var(--font-orbitron);
+    color: var(--color-2);
+    font-size: 4vw;
+    margin-top: 20px;
+    line-height: 60px;
+    margin-bottom: 20px;
+}
+
+.descp-lp{
+    font-family: var(--font-jetbrains);
+    color: var(--color-4);
+    font-size: 1.5vw;
+    margin-bottom: 70px;
+}
+
+.elemento-lp{
+    position: absolute;
+    left: 0; 
+    margin-top: 370px;
+    display: none;
+    z-index: 1; 
+}
+
+.elemento-lp img{
+    width: 200px;
+    height: auto;
+}
 
 /*Contacto*/
 .contacto{
@@ -280,6 +402,38 @@
     .link-sn{
         font-size: 3.5vw;
         text-align: center;
+    }
+
+    .img-dw,.img-cs,.img-lp{
+        display: none;
+    }
+
+    .container-dw, .container-cs, .container-lp{
+        gap: 110px;
+        padding: 4rem 3rem 4rem;
+    }
+
+    .texto-dw, .texto-cs, .texto-lp{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .titulo-dw, .titulo-cs, .titulo-lp{
+        font-size: 7vw;
+        line-height: 60px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .descp-dw, .descp-cs, .descp-lp{
+        font-size: 3.5vw;
+        text-align: center;
+        margin-bottom: 130px;
+    }
+
+    .elemento-dw, .elemento-cs, .elemento-lp{
+        display: block;
     }
 
     .contacto {
