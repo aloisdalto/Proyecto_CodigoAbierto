@@ -107,7 +107,7 @@
 }
 /*Card*/
 .card{
-    min-height: 350px;
+    height: 350px;
     margin: 0 4em;
     padding: 20px;
     background: radial-gradient(circle at 0% 0%, #8511ba, #bd85d4, #9b48bd);
@@ -119,14 +119,19 @@
     color: var(--color-4);
 }
 
+.card-title{
+    color: var(--color-2);
+    font-family: var(--font-orbitron);
+    font-weight: bold;
+    font-size: 24px;
+}
+
 .card-text{
-    margin-bottom: 50px;
+    margin-bottom: 60px;
 }
 
 .img-wrapper {
     margin: 25px 50px; 
-    width: 50%;
-    height: auto;
 }
 
 .img-wrapper img {
@@ -231,6 +236,10 @@
 
 /*Responsive*/
 @media screen and (max-width: 800px) {
+    .navbar-brand img{
+        width: 150px;
+    }
+    
     .navbar-collapse{
         margin-top: 15px;
     }
@@ -245,6 +254,18 @@
 
     .carousel-inner {
         padding: 3em 20px 4em;
+    }
+
+    .card{
+        height: 600px;
+    }
+
+    .card-text{
+        margin-bottom: 90px;
+    }
+
+    .flex-row{
+        flex-direction: column !important;
     }
 
     .contacto {

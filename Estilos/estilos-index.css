@@ -339,6 +339,11 @@
 
 /*Responsive*/
 @media screen and (max-width: 800px) {
+
+    .navbar-brand img{
+        width: 150px;
+    }
+
     .navbar-collapse{
         margin-top: 15px;
     }
