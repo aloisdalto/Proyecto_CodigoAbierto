@@ -52,6 +52,19 @@
     --bs-card-spacer-x: 3rem;
     background: radial-gradient(circle at 0% 0%, #8511ba, #bd85d4, #9b48bd);
     color: var(--color-4);
+    margin-bottom: 60px !important;
+}
+
+.card-body{
+    width: 60% !important;
+}
+
+.card-img-top{
+    min-width: 40%;
+    height: 350px;
+    border-top-left-radius: var(--bs-card-inner-border-radius);
+    border-bottom-left-radius: var(--bs-card-inner-border-radius);
+    border-top-right-radius: 0px;
 }
 
 .card-title{
@@ -66,7 +79,7 @@
 
 .card-text{
     text-align: left;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
 }
 
 .card-text span{
@@ -180,8 +193,18 @@
         padding: 3em 20px 4em;
     }
 
+    .card-body{
+        padding: var(--bs-card-spacer-y) 0px;
+    }
+
+    .card-img-top{
+        border-top-left-radius: var(--bs-card-inner-border-radius);
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: var(--bs-card-inner-border-radius);
+    }
+
     .card-title{
-        margin-left: 5px;
+        margin-left: 0px;
     }
 
     .card-text{
